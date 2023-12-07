@@ -1,0 +1,167 @@
+# depslib dependency file v1.0
+1701942695 source:d:\oop\codeblocks\exercise_oop\src\car.cpp
+	"Car.h"
+	"Engine.h"
+	"Controller.h"
+	"FuelTank.h"
+	"Light.h"
+	<iostream>
+
+1701942695 d:\oop\codeblocks\exercise_oop\include\car.h
+	"Controller.h"
+	"Engine.h"
+	"FuelTank.h"
+	"Light.h"
+	<iostream>
+
+1701941925 d:\oop\codeblocks\exercise_oop\include\engine.h
+	"Controller.h"
+	"FuelTank.h"
+	"Battery.h"
+
+1701942502 d:\oop\codeblocks\exercise_oop\include\controller.h
+	<iostream>
+
+1701936211 source:d:\oop\codeblocks\exercise_oop\src\battery.cpp
+	"Battery.h"
+	"Car.h"
+	<iostream>
+
+1701935681 d:\oop\codeblocks\exercise_oop\include\battery.h
+	<iostream>
+
+1701936792 source:d:\oop\codeblocks\exercise_oop\src\fueltank.cpp
+	"FuelTank.h"
+	"Engine.h"
+	<iostream>
+
+1701936792 d:\oop\codeblocks\exercise_oop\include\fueltank.h
+	<iostream>
+	<Controller.h>
+
+1701939440 source:d:\oop\codeblocks\exercise_oop\src\hmi.cpp
+	"HMI.h"
+	"Car.h"
+	<iostream>
+
+1701939224 d:\oop\codeblocks\exercise_oop\include\hmi.h
+	<iostream>
+	"Car.h"
+	"FuelTank.h"
+	"Battery.h"
+
+1701938039 source:d:\oop\codeblocks\exercise_oop\main.cpp
+	<iostream>
+	"Engine.h"
+	"Controller.h"
+	"Car.h"
+	"FuelTank.h"
+	"Battery.h"
+	"HMI.h"
+
+1701942502 source:d:\oop\codeblocks\exercise_oop\src\controller.cpp
+	"Controller.h"
+	"Engine.h"
+	"Car.h"
+	"Light.h"
+	<iostream>
+
+1701941925 source:d:\oop\codeblocks\exercise_oop\src\engine.cpp
+	"Engine.h"
+	"Controller.h"
+	"Car.h"
+	<iostream>
+	<string>
+	"FuelTank.h"
+
+1701942515 source:d:\oop\codeblocks\exercise_oop\src\light.cpp
+	"Light.h"
+	<iostream>
+
+1701943232 d:\oop\codeblocks\exercise_oop\include\light.h
+	"Controller.h"
+	"Battery.h"
+
+1701943232 source:d:\lg\mentorchung\my-first-repo\exercise_oop\main.cpp
+	<iostream>
+	"Engine.h"
+	"Controller.h"
+	"Car.h"
+	"FuelTank.h"
+	"Battery.h"
+	"HMI.h"
+
+1701941925 d:\lg\mentorchung\my-first-repo\exercise_oop\include\engine.h
+	"Controller.h"
+	"FuelTank.h"
+	"Battery.h"
+
+1701942502 d:\lg\mentorchung\my-first-repo\exercise_oop\include\controller.h
+	<iostream>
+
+1701936792 d:\lg\mentorchung\my-first-repo\exercise_oop\include\fueltank.h
+	<iostream>
+	<Controller.h>
+
+1701935681 d:\lg\mentorchung\my-first-repo\exercise_oop\include\battery.h
+	<iostream>
+
+1701942695 d:\lg\mentorchung\my-first-repo\exercise_oop\include\car.h
+	"Controller.h"
+	"Engine.h"
+	"FuelTank.h"
+	"Light.h"
+	<iostream>
+
+1701943232 d:\lg\mentorchung\my-first-repo\exercise_oop\include\light.h
+	"Controller.h"
+	"Battery.h"
+
+1701939224 d:\lg\mentorchung\my-first-repo\exercise_oop\include\hmi.h
+	<iostream>
+	"Car.h"
+	"FuelTank.h"
+	"Battery.h"
+
+1701957358 source:d:\lg\mentorchung\my-first-repo\exercise_oop\src\battery.cpp
+	"Battery.h"
+	"Car.h"
+	<iostream>
+
+1701942695 source:d:\lg\mentorchung\my-first-repo\exercise_oop\src\car.cpp
+	"Car.h"
+	"Engine.h"
+	"Controller.h"
+	"FuelTank.h"
+	"Light.h"
+	<iostream>
+
+1701942502 source:d:\lg\mentorchung\my-first-repo\exercise_oop\src\controller.cpp
+	"Controller.h"
+	"Engine.h"
+	"Car.h"
+	"Light.h"
+	<iostream>
+
+1701941925 source:d:\lg\mentorchung\my-first-repo\exercise_oop\src\engine.cpp
+	"Engine.h"
+	"Controller.h"
+	"Car.h"
+	<iostream>
+	<string>
+	"FuelTank.h"
+
+1701936792 source:d:\lg\mentorchung\my-first-repo\exercise_oop\src\fueltank.cpp
+	"FuelTank.h"
+	"Engine.h"
+	<iostream>
+
+1701939440 source:d:\lg\mentorchung\my-first-repo\exercise_oop\src\hmi.cpp
+	"HMI.h"
+	"Car.h"
+	<iostream>
+
+1701943232 source:d:\lg\mentorchung\my-first-repo\exercise_oop\src\light.cpp
+	"Light.h"
+	<iostream>
+

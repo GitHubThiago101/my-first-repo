@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1701958054 source:d:\lg\mentorchung\my-first-repo\test\threadtimer.cpp
+	<iostream>
+	<chrono>
+	<thread>
+	<ctime>
+	<atomic>
+
+1701959033 source:d:\lg\mentorchung\my-first-repo\test\example.cpp
+
+1701958035 d:\lg\mentorchung\my-first-repo\test\include\timer.h
+	<iostream>
+	<chrono>
+	<functional>
+	<thread>
+
+1701958035 source:d:\lg\mentorchung\my-first-repo\test\src\timer.cpp
+
+1701959046 source:d:\lg\mentorchung\my-first-repo\test\countthread.cpp
+	<string>
+	<iostream>
+	<thread>
+
