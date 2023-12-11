@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1702091338 source:d:\lg\mentorchung\my-first-repo\file_processing\main.cpp
+	"Config.h"
+	<fstream>
+	<iostream>
+	<cstring>
+
+1702091323 source:d:\lg\mentorchung\my-first-repo\file_processing\src\config.cpp
+	"Config.h"
+	"cstring"
+	"fstream"
+
+1702091323 d:\lg\mentorchung\my-first-repo\file_processing\include\config.h
+	<cstring>
+	<iostream>
+
