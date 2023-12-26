@@ -2,15 +2,14 @@
 #define LIGHT_H
 #include "Controller.h"
 #include "Battery.h"
-
+#include <thread>
+#include <unistd.h>
 class Light : public LightControllerDelegate
 {
     public:
         Light();
         virtual ~Light();
-        Light(const Light& other);
-        Light& operator=(const Light& other);
-
+        void operator()();
         void didTurnLight(StateLight) override;
 
     protected:

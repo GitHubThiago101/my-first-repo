@@ -5,6 +5,7 @@ using namespace std;
 Config::Config()
 {
     //ctor
+    sum = 0;
 }
 
 Config::Config(int _DoorNumber, string _Screen, string _AirConditioner, string _Gear)
@@ -15,32 +16,27 @@ Config::Config(int _DoorNumber, string _Screen, string _AirConditioner, string _
     strcpy(Gear, _Gear.c_str());
 }
 
-//Config::~Config()
-//{
-//    //dtor
-//}
-
 void Config::init()
 {
     cout << "Number of Door : " << DoorNumber << "\t\tScreen Size : " << Screen << "\t\tAir Conditioner Type : " << AirConditioner << "\t\tGear Type : " << Gear << endl;
 }
 
-//void save(Config obj)
-//{
-//    ofstream of("InforCar.dat", ios::binary | ios::app);
-//    of.write((char*)&obj, sizeof(obj));
-//    of.close();
-//}
+void Config::save(ofstream& of)
+{
+    of.write((char*)&DoorNumber, sizeof(DoorNumber));
+    of.write(Screen, sizeof(Screen));
+    of.write(AirConditioner, sizeof(AirConditioner));
+    of.write(Gear, sizeof(Gear));
+}
 
-//void load()
-//{
-//    ifstream ifs("InforCar.dat", ios::binary);
-//    Config obj;
-//    while(ifs.read((char*)&obj, sizeof(obj)))
-//    {
-//        obj.init();
-//    }
-//    ifs.close();
-//}
+void Config::load(ifstream& ifs)
+{
+    ifs.read((char*)&DoorNumber, sizeof(DoorNumber));
+    ifs.read(Screen, sizeof(Screen));
+    ifs.read(AirConditioner, sizeof(AirConditioner));
+    ifs.read(Gear, sizeof(Gear));
+   // cout << "Number of Door : " << DoorNumber << "\t\tScreen Size : " << Screen << "\t\tAir Conditioner Type : " << AirConditioner << "\t\tGear Type : " << Gear << endl;
+
+}
 
 

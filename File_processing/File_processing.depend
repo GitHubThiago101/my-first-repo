@@ -14,3 +14,47 @@
 	<cstring>
 	<iostream>
 
+1702288539 source:d:\oop\codeblocks\my-first-repo\file_processing\main.cpp
+	<iostream>
+
+1702286438 source:d:\oop\codeblocks\my-first-repo\file_processing\src\config.cpp
+	"Config.h"
+	"cstring"
+	"fstream"
+
+1702286448 d:\oop\codeblocks\my-first-repo\file_processing\include\config.h
+	<cstring>
+	<iostream>
+	<fstream>
+
+1702258301 source:d:\oop\codeblocks\my-first-repo\file_processing\src\tez.cpp
+	"tez.h"
+
+1702258301 d:\oop\codeblocks\my-first-repo\file_processing\include\tez.h
+
+1702260340 source:d:\oop\codeblocks\my-first-repo\file_processing\src\ted.cpp
+	"ted.h"
+
+1702260340 d:\oop\codeblocks\my-first-repo\file_processing\include\ted.h
+
+1702262223 source:d:\oop\codeblocks\my-first-repo\file_processing\src\tet.cpp
+	"tet.h"
+
+1702262223 d:\oop\codeblocks\my-first-repo\file_processing\include\tet.h
+
+1702264133 source:d:\oop\codeblocks\my-first-repo\file_processing\src\abc.cpp
+	"abc.h"
+
+1702264133 d:\oop\codeblocks\my-first-repo\file_processing\include\abc.h
+
+1702264344 source:d:\oop\codeblocks\my-first-repo\file_processing\src\a.cpp
+	"a.h"
+
+1702264344 d:\oop\codeblocks\my-first-repo\file_processing\include\a.h
+
+1702280458 source:d:\oop\codeblocks\my-first-repo\file_processing\src\test.cpp
+	"Test.h"
+
+1702281433 d:\oop\codeblocks\my-first-repo\file_processing\include\test.h
+	<iostream>
+

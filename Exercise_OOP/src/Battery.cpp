@@ -3,10 +3,13 @@
 #include <iostream>
 using namespace std;
 
+//int Battery::energy_ = 0;
+Battery* Battery::instancePtr = nullptr;
+
 Battery::Battery()
 {
     //ctor
-    energy = 150;
+    energy = 0;
 }
 
 Battery::~Battery()
@@ -16,12 +19,18 @@ Battery::~Battery()
 
 int Battery::getEnergy(int needed)
 {
-    energy += needed;
-    if (energy > 1000 && energy < 0) return energy;
-    else {
-        cout << "Full already!!" << endl;
-        return -1;
+    if (energy >= needed)
+    {
+        energy -= needed;
+        return needed;
     }
+    else
+    {
+        int temp = energy;
+        energy = 0;
+        return temp;
+    }
+
 }
 
 int Battery::currentEnergy()
@@ -31,16 +40,21 @@ int Battery::currentEnergy()
 
 void Battery::charge(int percent)
 {
-//       Gear currentgear = car.gear;
-//    int currentpercent;
-//    if (car.getInforPercent == car.getInforPercentChanged)
-//    {
-//        currentpercent = car.getInforPercent;
-//    }
-//    else currentpercent = car.getInforPercentChanged;
     energy += percent;
-    cout << "Charged " << energy << " mAh" << endl;
-//    cout << "Energy charged : " << energy << endl;
-//    car.getInforBattery = energy;
-//    getInforEnergy = energy;
+    if (energy < 1000) cout << "Charged " << energy << " mAh" << endl;
+    else
+    {
+        cout << "Energy is full now!!" << endl;
+        energy = 1000;
+    }
+    //energy_ = energy;
+}
+
+Battery* Battery::getInstance()
+{
+    if(nullptr == instancePtr)
+    {
+        instancePtr = new Battery();
+    }
+    return instancePtr;
 }

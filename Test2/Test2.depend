@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1702027827 source:d:\oop\codeblocks\my-first-repo\test2\student.cpp
+	<fstream>
+	<iostream>
+	<cstring>
+

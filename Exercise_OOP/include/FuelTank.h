@@ -14,11 +14,9 @@ public:
     ~FuelTank();
     int getFuel(int);
     int currentFuel();
-
-    int calculateFuel(Gear, int);
-    int useReal;
-    int remain;
+    static FuelTank* getInstance();
 private:
+    static FuelTank* instancePtr;
     int fuel;
 };
 

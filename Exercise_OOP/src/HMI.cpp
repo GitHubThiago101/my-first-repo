@@ -1,5 +1,4 @@
 #include "HMI.h"
-#include "Car.h"
 #include <iostream>
 using namespace std;
 
@@ -13,12 +12,11 @@ HMI::~HMI()
     //dtor
 }
 
-void HMI::showInfor()
+void HMI::showInfor(int fuel, int battery, Gear gear)
 {
-//    cout << " " << endl;
-//    cout << "----Information of Car----" << endl;
-//    cout << "Fuel : " << fuel << endl;
-//    cout << "Battery : " << battery << endl;
-//    cout << "Gear : " <<  << endl;
-
+    cout << " " << endl;
+    cout << "----Information of Car----" << endl;
+    cout << "Fuel : " << fuel << endl;
+    cout << "Battery : " << battery << endl;
+    cout << "Gear : " << gear << endl;
 }

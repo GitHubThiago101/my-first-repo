@@ -49,7 +49,6 @@ class Controller
     protected:
 
     private:
-//        Light* light;
         Gear gear;
         int percent;
         EngineControllerDelegate *delegate;

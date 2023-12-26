@@ -2,16 +2,14 @@
 #define ENGINE_H
 #include "Controller.h"
 #include "FuelTank.h"
-#include "Battery.h"
-
 
 class CarEngineDelegate{
 public:
-    virtual void runThisCar(Gear, int) = 0;
+    virtual void runThisCar(int, Gear) = 0;
 
 };
 
-class Car;
+
 class Engine : public EngineControllerDelegate{
 public:
     Engine();
@@ -21,17 +19,16 @@ public:
     void setDelegate(CarEngineDelegate&);
     void didChangeGear(Gear) override;
     void didStepOnAccelerator(int) override;
-
-
+    int calcFuel(int, int, int);
 protected:
 
 private:
     CarEngineDelegate *delegateCar;
-    FuelTank* fueltank;
-    Battery* battery;
-
+    FuelTank *fueltank;
     string stateGear;
     Gear currentG;
+    int fuel;
+    int distance;
 };
 
 #endif // ENGINE_H

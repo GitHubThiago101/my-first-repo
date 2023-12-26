@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1702020038 source:d:\oop\codeblocks\exercise_fileprocessing\main.cpp
+	<fstream>
+	<iostream>
+	"Config.h"
+
+1702020999 source:d:\oop\codeblocks\exercise_fileprocessing\src\config.cpp
+	"Config.h"
+	<fstream>
+	<iostream>
+
+1702019809 d:\oop\codeblocks\exercise_fileprocessing\include\config.h
+	<iostream>
+	<fstream>
+
+1702020056 source:d:\oop\codeblocks\exercise_fileprocessing\src\configuration.cpp
+	"Configuration.h"
+	<fstream>
+	<iostream>
+
+1702020056 d:\oop\codeblocks\exercise_fileprocessing\include\configuration.h
+
+1702263447 source:d:\oop\codeblocks\my-first-repo\exercise_fileprocessing\main.cpp
+	<fstream>
+	<iostream>
+	"Config.h"
+
+1702019809 d:\oop\codeblocks\my-first-repo\exercise_fileprocessing\include\config.h
+	<iostream>
+	<fstream>
+
+1702263458 source:d:\oop\codeblocks\my-first-repo\exercise_fileprocessing\src\thi.cpp
+	"thi.h"
+
+1702263458 d:\oop\codeblocks\my-first-repo\exercise_fileprocessing\include\thi.h
+
+1702263493 source:d:\oop\codeblocks\my-first-repo\exercise_fileprocessing\src\config.cpp
+	"Config.h"
+	<fstream>
+	<iostream>
+

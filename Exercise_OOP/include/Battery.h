@@ -4,21 +4,20 @@
 #include <iostream>
 using namespace std;
 
-
-
 class Battery
 {
 public:
+    //static int energy_;
     Battery();
     ~Battery();
-//    int getInforEnergy;
 
     int getEnergy(int);
     void charge(int);
     int currentEnergy();
-
+    static Battery* getInstance();
 
 private:
+    static Battery* instancePtr;
     int energy;
 };
 

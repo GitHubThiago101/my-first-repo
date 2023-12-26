@@ -1,42 +1,27 @@
 #include "Car.h"
-#include "Engine.h"
-#include "Controller.h"
-#include "FuelTank.h"
-#include "Light.h"
 #include <iostream>
 using namespace std;
 
 int Car::counter = 0;
+//Car::printCount = 0;
 
-Car::Car()
+Car::Car() : controller(new Controller()), hmi(new HMI())
 {
     //ctor
-    controller = new Controller();
+    battery = Battery::getInstance();
+    fueltank = FuelTank::getInstance();
     controller->setDelegate(engine);
     engine.setDelegate(*this);
     controller->setDelegateLight(light);
-    //FuelTank fueltank();
-//    engine.currentFuel();
-
     ++counter;
 }
 
 Car::~Car()
 {
     //dtor
-    --counter;
-}
-
-Car::Car(const Car& other)
-{
-    //copy ctor
-}
-
-Car& Car::operator=(const Car& rhs)
-{
-    if (this == &rhs) return *this; // handle self assignment
-    //assignment operator
-    return *this;
+    delete fueltank;
+    delete battery;
+    delete controller;
 }
 
 void Car::printCount(void)
@@ -44,28 +29,15 @@ void Car::printCount(void)
     cout << "count:" << counter << "\n";
 }
 
-
-void Car::runThisCar(Gear g, int per)
+void Car::runThisCar(int distance, Gear gear)
 {
     cout << " " << endl;
     cout << "----Controller sent signal to car----" << endl;
-    cout << "Let run: with current Gear " << g << ", and " << per << " m" << endl;
+    battery->charge(distance);
+    int energy = battery->currentEnergy();
+    int fuel = fueltank->currentFuel();
+    hmi->showInfor(fuel, energy, gear);
 }
-
-
-//void Car::getController(Car& car, Gear g, int per){
-//
-////    cout << "Gear type : " << gear << endl;
-//
-//    getInforGear = g;
-//    getInforPercent = per;
-//    Engine engine;
-//    engine.setDelegate(car);
-//    controller->setDelegate(engine);
-//    controller->changeGear(g);
-//    controller->stepOnAccelerator(per);
-//
-//}
 
 Controller* Car::getController(){
     return controller;

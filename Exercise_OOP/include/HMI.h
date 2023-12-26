@@ -1,9 +1,8 @@
 #ifndef HMI_H
 #define HMI_H
 #include <iostream>
-#include "Car.h"
-#include "FuelTank.h"
-#include "Battery.h"
+#include "Controller.h"
+//#include "Car.h"
 using namespace std;
 
 class HMI
@@ -11,10 +10,12 @@ class HMI
 public:
     HMI();
     ~HMI();
-    Gear gear;
-    int fuel;
-    int battery;
-    void showInfor();
+    void showInfor(int, int, Gear);
+//    void showInfor(int, int);
+//    void showInfor(int);
+//    void showInfor(Gear);
+//    void showInfor(int, Gear);
+
 };
 
 #endif // HMI_H
